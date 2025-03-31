@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+// import React, { useState } from "react";
 
-function App() {
+// const App = () => {
+//   //useState hook
+
+//   const [value, setValue] = useState(0);
+
+//   function add() {
+//     setValue(value + 1);
+//   }
+
+//   return (
+//     <div>
+//       <div>{value}</div>
+
+//       <button onClick={add}>Increament</button>
+//     </div>
+//   );
+// };
+
+// export default App;
+
+import React from 'react'
+import navbar from'./Navbar/navbar';
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <navbar/>
+    <Hero/>
+    <Section1/>
+
+  )
 }
 
-export default App;
+export default App
